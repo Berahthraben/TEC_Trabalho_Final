@@ -1,0 +1,39 @@
+init 0 # R escreve_0_init
+init 1 # R escreve_1_init
+
+escreve_0_init 0 0 R escreve_0_init
+escreve_0_init 1 0 R escreve_1_init 
+escreve_0_init _ 0 R escreve_@
+
+escreve_1_init 0 1 R escreve_0_init
+escreve_1_init 1 1 R escreve_1_init 
+escreve_1_init _ 1 R escreve_@
+
+escreve_@ _ @ L rebobinar
+escreve_@ 0 @ L rebobinar
+escreve_@ 1 @ L rebobinar
+
+rebobinar # # R start
+rebobinar _ _ R start
+rebobinar * * L rebobinar
+
+start @ _ L rebobinar_start
+start * * R escreve_branco
+
+escreve_branco 0 _ R escreve_0
+escreve_branco 1 _ R escreve_1
+escreve_branco @ _ R escreve_@
+escreve_branco _ _ L rebobinar
+
+escreve_0 0 0 R escreve_0 
+escreve_0 1 0 R escreve_1 
+escreve_0 _ 0 R escreve_branco
+escreve_0 @ 0 R escreve_@
+
+escreve_1 0 1 R escreve_0 
+escreve_1 1 1 R escreve_1 
+escreve_1 _ 1 R escreve_branco
+escreve_1 @ 1 R escreve_@
+
+rebobinar_start * * L rebobinar_start
+rebobinar_start # * R halt-accept

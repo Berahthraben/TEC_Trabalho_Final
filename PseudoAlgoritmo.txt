@@ -1,0 +1,8 @@
+Mudar todos os estados para um número extra
+Adicionar um estado 0 e um estado n + 1, onde n é o número de estados no arquivo original
+Mover todo o conteúdo da fita para a direita (Usando estado 0)
+Retornar ao primeiro vazio e colocar um símbolo (#)
+Realizar as operações normalmente
+Encontrar o local de aceitação e direcionar para a subrotina do estado n + 1
+Mover todo o conteúdo da fita novamente para a esquerda, substituindo o símbolo (usando a subrotina n+1)
+Fim!
