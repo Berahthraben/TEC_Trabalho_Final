@@ -11,9 +11,9 @@
 py main.py ./{arquivo}.in
 ```
 
-## Show your support
+## LINK VIDEO DO YOUTUBE EXPLICANDO UTILIZAÇÃO/LÓGICA
 
-Give a ⭐️ if this project helped you!
+https://youtu.be/h2VDSB0wfMA
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
